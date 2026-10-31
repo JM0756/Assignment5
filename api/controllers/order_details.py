@@ -7,7 +7,7 @@ def create(db: Session, order_detail):
     # Create a new instance of the OrderDetail model with the provided data
     db_order_detail = models.OrderDetail(
         order_id=order_detail.order_id,
-        recipe_id=order_detail.recipe_id,
+        sandwich_id=order_detail.sandwich_id,
         amount=order_detail.amount
     )
     # Add the newly created OrderDetail object to the database session
